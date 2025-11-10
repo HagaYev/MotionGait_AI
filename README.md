@@ -40,13 +40,21 @@ blue leg- seconed leg
 ## Folder Structure
 
 Robotic_Leg/
+
 ├── video/                     # Input videos and output results (ignored by git)
+
 ├── csv_data/                   # CSV files generated from videos (ignored by git)
+
 ├── Model.py                    # Main script: YOLO detection + tracking, GPU recommended
+
 ├── model_impl.py               # Implementation of joint prediction model
+
 ├── video2labels.py             # Helper script: convert tracked videos into CSV labels
+
 ├── video2frames.py             # Helper script: extract frames from videos
+
 ├── yolov8n.pt                  # YOLOv8n model weights (ignored by git)
+
 └── README.md                   # Project documentation
 
 
