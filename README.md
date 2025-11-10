@@ -13,8 +13,7 @@ This project embraces the idea that an algorithm is not merely a set of mathemat
 
 The finel result is amazing:
 
-https://github.com/user-attachments/assets/533df8d6-acdc-45ca-8170-bae5bc1701d8
-
+https://s3.ezgif.com/tmp/ezgif-3faaabcb69329b13.gif
 
 
 ---
