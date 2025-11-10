@@ -62,6 +62,7 @@ Robotic_Leg/
 
 - [YouTube: Human Pose Estimation with YOLOv8](https://www.youtube.com/watch?v=MmWPYKF2_A0) – Tutorial on using YOLOv8 for tracking people and extracting keypoints.
 - [YouTube: Pose Estimation and Joint Prediction](https://www.youtube.com/watch?v=ag3DLKsl2vk&t=296s) – Guide on creating datasets and processing joint coordinates for learning.
+- https://github.com/benjyb1/Prosthetic-Classifcation-and-Prediction
 
 
 
