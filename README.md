@@ -5,13 +5,13 @@ AI-based system for predicting and tracking joint motion during human walking.
 ---
 
 ## Project Overview
-Computer vision and deep learning are two transformative technologies, each powerful on its own, yet even more impactful when combined. Deep learning amplifies the capabilities of computer vision, creating a system capable of sophisticated perception and understanding.
+Computer vision and deep learning have always fascinated me. Each is impressive on its own, but when combined, they open possibilities I never imagined. Deep learning doesn’t just improve computer vision it makes it smarter, able to perceive and understand in ways that feel almost human.
 
-In the past, when I observed robots whether in reality or on screen I focused on the algorithm that governed their behavior. Today, my perspective has evolved.
+In the past, when I watched robots, whether on screen or in the lab, I was drawn to their algorithms the rules and logic that controlled them. Today, I see things differently.
 
-This project embraces the idea that an algorithm is not merely a set of mathematical functions or logical gates. The true “algorithm” emerges from the interplay between people, data, and human insight augmented and strengthened by deep learning.
+For me, an algorithm isn’t just a set of functions or logic gates. The real magic happens where people, data, and intuition meet, enhanced by deep learning. That interplay is what turns a simple program into something that can learn, adapt, and even surprise us.
 
-The finel result is amazing: 
+The final result is pretty cool:
 
 Red leg - predicted leg
 green leg- real leg
