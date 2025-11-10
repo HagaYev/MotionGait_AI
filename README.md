@@ -14,7 +14,9 @@ For me, an algorithm isn’t just a set of functions or logic gates. The real ma
 The final result is pretty cool:
 
 Red leg - predicted leg
+
 green leg- real leg
+
 blue leg- seconed leg
 
 ![ezgif-3faaabcb69329b13](https://github.com/user-attachments/assets/09deab10-0689-4a4e-a0e6-47df406214d9)
