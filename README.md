@@ -11,8 +11,11 @@ In the past, when I observed robots whether in reality or on screen I focused on
 
 This project embraces the idea that an algorithm is not merely a set of mathematical functions or logical gates. The true “algorithm” emerges from the interplay between people, data, and human insight augmented and strengthened by deep learning.
 
+The finel result is amazing:
 
-<img width="1326" height="722" alt="image" src="https://github.com/user-attachments/assets/3a9069cd-fc54-48f9-aa6f-6c618c45da70" />
+https://github.com/user-attachments/assets/533df8d6-acdc-45ca-8170-bae5bc1701d8
+
+
 
 ---
 
@@ -26,7 +29,7 @@ This project embraces the idea that an algorithm is not merely a set of mathemat
 6. Monitor learning progress with training graphs.
 7. Test predictions on a new video file.
 
-
+<img width="1326" height="722" alt="image" src="https://github.com/user-attachments/assets/3a9069cd-fc54-48f9-aa6f-6c618c45da70" />
 ---
 
 ## Folder Structure
