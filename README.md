@@ -11,7 +11,11 @@ In the past, when I observed robots whether in reality or on screen I focused on
 
 This project embraces the idea that an algorithm is not merely a set of mathematical functions or logical gates. The true “algorithm” emerges from the interplay between people, data, and human insight augmented and strengthened by deep learning.
 
-The finel result is amazing:
+The finel result is amazing: 
+
+Red leg - predicted leg
+green leg- real leg
+blue leg- seconed leg
 
 ![ezgif-3faaabcb69329b13](https://github.com/user-attachments/assets/09deab10-0689-4a4e-a0e6-47df406214d9)
 
