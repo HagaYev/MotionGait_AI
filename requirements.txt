@@ -1,0 +1,8 @@
+pandas
+numpy
+torch
+matplotlib
+opencv-python
+ultralytics
+deep-sort-realtime
+mediapipe

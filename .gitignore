@@ -1,6 +1,7 @@
 # Ignore video and raw data folders
 video/
 csv_data/
+yolov8n.pt/
 
 # Ignore virtual environment and cache files
 .venv/

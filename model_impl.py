@@ -10,7 +10,7 @@ from model import LegMotionLSTM, create_sequences_from_array, predict_to_coords,
 from sklearn.preprocessing import StandardScaler
 
 # Config
-folder_path = "" # choose your file
+folder_path = r"Robotic_Leg\csv_data"
 sequence_length = 30
 batch_size = 64
 epochs = 100

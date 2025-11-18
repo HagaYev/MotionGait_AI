@@ -86,9 +86,10 @@ def video_to_labels(video_name, folder_path=None, output_folder=None):
     if folder_path is None:
         folder_path = r'Robotic_Leg\video\focused frame'
 
-    # Always save CSV files in this path if not specified
+    # Always save CSV files in this path
     if output_folder is None:
         output_folder = r'Robotic_Leg\csv_data'
+        os.makedirs(output_folder, exist_ok=True)
 
     video_path = os.path.join(folder_path, video_name)
     cap = cv2.VideoCapture(video_path)
