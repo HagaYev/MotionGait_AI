@@ -44,12 +44,6 @@ cd MotionGait_AI
 2. Create a virtual environment (recommended):
 ```bash
 python -m venv venv
-
-# On Windows
-venv\Scripts\activate
-
-# On Linux/Mac
-source venv/bin/activate
 ```
 
 3. Install dependencies:
@@ -70,12 +64,12 @@ pip install -r requirements.txt
 Extract cropped videos of individual people walking from a video file:
 
 ```bash
-python track_people.py path/to/video.mp4 --output_dir output/focused_frames
+python videos2frame_impl.py path/to/video.mp4 --output_dir output/focused_frames
 ```
 
 **Options:**
 - `--output_dir`: Directory to save output videos (default: focused_frames in video folder)
-- `--yolo_model`: Path to YOLO model weights (default: yolov8n.pt)
+- `--yolo_model`: Path to YOLO model weights (default: yolov8n.pt) # Or another one
 - `--target_size`: Target size for output videos (default: 400)
 - `--fps`: Frames per second for output videos (default: 30)
 - `--min_seconds`: Minimum seconds of walking required (default: 4)
@@ -86,31 +80,20 @@ python track_people.py path/to/video.mp4 --output_dir output/focused_frames
 Extract joint positions from videos and save them as CSV files:
 
 ```bash
-python video2labels.py path/to/video.avi --output_folder csv_data
+python video2labels_impl.py path/to/video.avi --output_folder csv_data
 ```
 
 **Options:**
 - `--output_folder`: Folder to save CSV files (default: csv_data in video folder)
 - `--no-preview`: Disable video preview during processing
 
-### 3. Batch Process Videos
 
-Process all video files in a folder:
-
-```bash
-python batch_process_videos.py path/to/video/folder --output_folder csv_data
-```
-
-**Options:**
-- `--output_folder`: Folder to save CSV files (optional)
-- `--no-preview`: Disable video preview during processing
-
-### 4. Train the Model
+### 3. Train the Model
 
 Train the LSTM model to predict leg joint positions:
 
 ```bash
-python train_model.py --data_folder csv_data --epochs 100 --batch_size 64
+python model_impl.py --data_folder csv_data
 ```
 
 **Options:**
@@ -135,19 +118,6 @@ python train_model.py \
     --output_video output/prediction.mp4
 ```
 
-### 5. Visualize Labels
-
-Visualize joint positions from a CSV file:
-
-```bash
-python visualize_labels.py path/to/labels.csv
-```
-
-**Options:**
-- `--width`: Width of visualization window (default: 400)
-- `--height`: Height of visualization window (default: 400)
-- `--fps`: Frames per second for display (default: 30)
-
 ## Project Workflow
 
 1. **Load videos** of people walking
@@ -159,20 +129,6 @@ python visualize_labels.py path/to/labels.csv
 7. **Test predictions** on new video files
 8. **Visualize results** with predicted and actual joint positions
 
-## Project Structure
-
-```
-MotionGait_AI/
-├── model.py                  # LSTM model architecture and utilities
-├── train_model.py            # Training script for LSTM model
-├── track_people.py           # Person tracking and video extraction
-├── video2labels.py           # Convert videos to joint labels (CSV)
-├── batch_process_videos.py   # Batch process multiple videos
-├── visualize_labels.py       # Visualize joint positions from CSV
-├── requirements.txt          # Python dependencies
-├── .gitignore               # Git ignore file
-└── README.md                # Project documentation
-```
 
 ## Data Structure
 
@@ -198,44 +154,12 @@ The LSTM model consists of:
 - **Loss Function**: Mean Squared Error (MSE)
 - **Optimizer**: Adam
 
-## Requirements
-
-- Python 3.8+
-- PyTorch 1.9+
-- OpenCV 4.5+
-- MediaPipe 0.8+
-- Ultralytics YOLO 8.0+
-- DeepSort Realtime 1.3+
-- NumPy 1.21+
-- Pandas 1.3+
-- scikit-learn 1.0+
-- Matplotlib 3.4+
-
-## Troubleshooting
-
-### Common Issues
-
-1. **CUDA out of memory**: Reduce batch size or sequence length
-2. **No CSV files found**: Check that video files have been processed first
-3. **Missing landmarks**: Ensure videos contain clear views of people walking
-4. **Import errors**: Make sure all dependencies are installed: `pip install -r requirements.txt`
-
 ### Performance Tips
 
 - Use GPU for faster training and inference
 - Reduce video resolution for faster processing
 - Use batch processing for multiple videos
 - Adjust sequence length based on your data
-
-## Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
-
-## License
-
-This project is open source and available under the MIT License.
-
-## References
 
 - [YouTube: Human Pose Estimation with YOLOv8](https://www.youtube.com/watch?v=MmWPYKF2_A0) – Tutorial on using YOLOv8 for tracking people and extracting keypoints.
 - [YouTube: Pose Estimation and Joint Prediction](https://www.youtube.com/watch?v=ag3DLKsl2vk&t=296s) – Guide on creating datasets and processing joint coordinates for learning.
@@ -246,4 +170,4 @@ This project is open source and available under the MIT License.
 - MediaPipe for pose estimation
 - Ultralytics for YOLO implementation
 - DeepSort for person tracking
-- PyTorch for deep learning framework
+- PyTorch for deep learning framework LSTM model
